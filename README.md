@@ -43,7 +43,7 @@
 
 ### Triển khai kong-gateway:
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0cc7afd5-0a7a-4f7e-b651-1e0d3557c641" width="80%" alt="Harbor Registry">
+  <img src="https://github.com/user-attachments/assets/f2cce5b0-3f17-44bf-99c2-95fc100c490d" width="80%" alt="Harbor Registry">
   <br>
   <i> Khai báo các microservice</i>
 </p>
