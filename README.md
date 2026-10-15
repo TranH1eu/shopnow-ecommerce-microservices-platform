@@ -1,6 +1,7 @@
 ### Tổ chức dự án trên gitlab
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/af4042e9-2398-4e24-b2e7-1dfa057d3465" width="80%" alt="Harbor Registry">
+  <img src="https://github.com/user-attachments/assets/bdadd2f4-ac40-4a34-9507-301e2b689288
+" width="80%" alt="Harbor Registry">
   <br>
 
   <i> Các microservice trong dự án microservices ecommerce</i>
