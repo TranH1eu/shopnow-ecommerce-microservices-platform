@@ -1,0 +1,42 @@
+stages:
+    - build
+    - deploy
+
+variables:
+    DOCKER_IMAGE: registry.h1euda.click/shopnow-gitlab/frontend:$CI_COMMIT_SHORT_SHA
+    REGISTRY_URL: registry.h1euda.click
+
+build:
+    stage: build
+    image: docker:20-dind
+    variables:
+        DOCKER_HOST: tcp://docker:2375
+        DOCKER_DRIVER: overlay2
+        DOCKER_TLS_CERTDIR: ""
+    services:
+     -  name: docker:20-dind
+        alias: docker
+        command: ["--tls=false"]
+    script:
+     -  docker info
+     -  docker build -t $DOCKER_IMAGE .
+     -  apk add --no-cache curl jq
+     - >
+      SECRETS=$(curl -s --header "X-Vault-Token: $SHOPNOW_TOKEN"
+      --request GET "https://vault.hidevops.online/v1/kv/data/shopnow/registry" | jq -r '.data.data')
+     - REGISTRY_USERNAME=$(echo $SECRETS | jq -r '.user')
+     - REGISTRY_PASSWORD=$(echo $SECRETS | jq -r '.password')
+     - REGISTRY_URL=$(echo $SECRETS | jq -r '.url')
+
+     - docker login -u "$REGISTRY_USERNAME" -p "$REGISTRY_PASSWORD" "$REGISTRY_URL"
+     - docker push $DOCKER_IMAGE
+    tags:
+     -  runner-shared-1
+
+deploy:
+    stage: deploy
+    image: bitnami/kubectl:latest
+    script:
+     -  kubectl set image deployment/shopnow-fe-deployment shopnow-fe=$DOCKER_IMAGE -n shopnow
+    tags:
+     -  runner-shared-1
