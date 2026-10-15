@@ -1,6 +1,6 @@
 ### Tổ chức dự án trên gitlab
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/bdadd2f4-ac40-4a34-9507-301e2b689288
+  <img src="https://github.com/user-attachments/assets/c167528c-c6b6-4b0a-b5c5-591954ce670f"
 " width="80%" alt="Harbor Registry">
   <br>
 
@@ -43,19 +43,19 @@
 
 ### Triển khai kong-gateway:
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/f2cce5b0-3f17-44bf-99c2-95fc100c490d" width="80%" alt="Harbor Registry">
+  <img src="https://github.com/user-attachments/assets/e4ae9cdc-e746-4ba5-ae67-f29f612b641c" width="80%" alt="Harbor Registry">
   <br>
   <i> Khai báo các microservice</i>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0d1b9837-4874-489c-aa5b-544c8ab913a8" width="80%" alt="Harbor Registry">
+  <img src="https://github.com/user-attachments/assets/27fee149-0406-439b-97ad-a351fca96bac" width="80%" alt="Harbor Registry">
   <br>
   <i> Thực hiện route để tập chung gateway qua một domain kong duy nhất</i>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ff70c199-c7b4-4416-8165-c414c8aa4909" width="80%" alt="Harbor Registry">
+  <img src="https://github.com/user-attachments/assets/80135164-0612-4fe3-a1ac-05c0046d5298" width="80%" alt="Harbor Registry">
   <br>
   <i> Thiết lập quyền clients truy cập các api microservice</i>
 </p>
@@ -64,7 +64,7 @@
 
 ### Triển khai hashicorp vault để bảo mật dữ liệu
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/32500223-0929-444d-8621-13abe3ccd7de" width="80%" alt="Harbor Registry">
+  <img src="https://github.com/user-attachments/assets/382c7f95-a36e-44dc-af2f-b41c8c863a76" width="80%" alt="Harbor Registry">
   <br>
   <i> Lưu trữ thông tin về sonarqube</i>
 </p>
@@ -73,7 +73,7 @@
 
 ### Triển khai sonarqube để check code
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/fecb5368-d87d-4028-9bdc-3f33d9ce47d9" width="80%" alt="Harbor Registry">
+  <img src="https://github.com/user-attachments/assets/1239a5d2-7cd2-4e87-b99d-bb134d48e55b" width="80%" alt="Harbor Registry">
   <br>
   <i> Thông tin về chất lượng code</i>
 </p>
@@ -98,7 +98,7 @@
 
 ### Triển khai hệ thống logging bằng ELK
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8f3580b8-4a77-4465-919f-cf17ff8a859a" width="80%" alt="Harbor Registry">
+  <img src="https://github.com/user-attachments/assets/957adb45-25cc-4814-b9a6-24bc43b30981" width="80%" alt="Harbor Registry">
   <br>
   <i> Ví dụ về việc lấy logs của microservice trong hệ thống microservices</i>
 </p>
@@ -107,13 +107,13 @@
 
 ### Monitoring bằng Prometheus-Grafana
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/c1efd34e-491a-4e3a-9ec6-e932b12a89ee" width="80%" alt="Harbor Registry">
+  <img src="https://github.com/user-attachments/assets/1f4e2230-80c5-45d2-a471-c44ee206b42d" width="80%" alt="Harbor Registry">
   <br>
   <i> Grafana thực hiện lấy thông tin thông qua các metric</i>
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/5c72e088-4b00-4ba3-b943-e345c19c1b56" width="80%" alt="Harbor Registry">
+  <img src="https://github.com/user-attachments/assets/38454515-e285-47b2-9ddf-e019a29cf350" width="80%" alt="Harbor Registry">
   <br>
   <i> Prometheus trực quan hóa dữ liệu</i>
 </p>
